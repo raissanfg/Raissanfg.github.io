@@ -68,7 +68,7 @@ h2 {
     border-style: none;
     text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 img {
@@ -81,12 +81,13 @@ img {
     float:right;
     width: 300px;
     height:300px;
-    margin-right: 180px;  
+    margin-top: 5%;
+    margin-right: 130px;  
 }
 
 /* experience section */
 #exp {
-    padding-top: 3%;
+    padding-top: 7%;
     padding-bottom: 7%;
 }
 
@@ -128,7 +129,7 @@ table, th {
 }
 
 #skills ul {
-    padding-left: 20%;
+    padding-left: 1%;
 }
 
 .skl {
