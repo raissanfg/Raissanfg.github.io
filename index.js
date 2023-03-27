@@ -33,7 +33,7 @@ renderSkillsList();
 
 const messageForm = document.getElementsByName('leave-a-message');
 const messageSection = document.getElementById('messages');
-messageSection.hidden = true;
+
 
 messageForm.item(0).addEventListener('submit', (event) => {
     event.preventDefault();
@@ -49,23 +49,6 @@ messageForm.item(0).addEventListener('submit', (event) => {
         return
     }
 
-
-const messageList = messageSection.querySelector('ul');
-    const newMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href="mailto:${email}">${name}</a> wrote: <span>${message}</span>`;
-    
-    const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
-    removeButton.type = 'button';
-    removeButton.addEventListener('click', () => {
-        const entry = removeButton.parentNode;
-        entry.remove();
-    });
-
-    newMessage.appendChild(removeButton);
-    messageList.appendChild(newMessage);
-    messageSection.hidden = false;
-    messageForm.item(0).reset();
 });
 
 const githubRequest = new XMLHttpRequest();
