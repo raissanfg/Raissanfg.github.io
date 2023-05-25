@@ -91,4 +91,9 @@ function renderProjectsWithFetch() {
 })
 }
 
+TB.render('leave-a-message', function(data) {
+    data.ele.find('.af-form-submit').on('click', function() {
+        location.reload();
+    });
+});
 
