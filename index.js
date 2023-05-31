@@ -14,7 +14,7 @@ renderCopyright();
 
 //skills section
 const renderSkillsList = () => {
-const skills = ['HTML', 'CSS', 'JavaScript', 'GIT']
+const skills = ['HTML', 'CSS', 'JavaScript', 'GIT', 'REACT']
 
 
 //DOM
@@ -57,7 +57,7 @@ githubRequest.send();
 githubRequest.addEventListener('load', function() {
 const repositories = JSON.parse(this.response)
 
-const projectSection = document.querySelector('#projects')
+const projectSection = document.querySelector('../static/projects.css')
 const projectList = projectSection.querySelector('ul')
 
  for (let i=0; i < repositories.length; i++) {
@@ -91,4 +91,9 @@ function renderProjectsWithFetch() {
 })
 }
 
+TB.render('leave-a-message', function(data) {
+    data.ele.find('.af-form-submit').on('click', function() {
+        location.reload();
+    });
+});
 
