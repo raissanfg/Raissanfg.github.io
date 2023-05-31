@@ -62,9 +62,10 @@ h2 {
  }
 
 /* leave a message section */
+
 #msg {
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom:70px;
 }
 
 #leave_message {

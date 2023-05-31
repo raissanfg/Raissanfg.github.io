@@ -1,7 +1,4 @@
 /* about me section*/
-#container {
-   padding-bottom: 15%;
-}
 
 .about-me {
     font-family: 'Times New Roman', Times, serif;
@@ -10,6 +7,7 @@
     font-size: 17px;
     margin-top: 40px;
     margin-right: 60px;
+    padding-bottom: 0;
 }
 
 .abt {
@@ -40,7 +38,6 @@ img {
 
 /* experience section */
 .exp {
-    
     padding-bottom: 7%;
     font-family: 'Blanka', sans-serif;
     color: antiquewhite;
