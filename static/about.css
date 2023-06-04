@@ -88,3 +88,57 @@ footer {
     margin-top: 100px; 
     background-color: #161515;
   }
+
+/*Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+    #container {
+        margin-left: 35px;
+    } 
+
+    #copyright {
+        font-size: 8px;
+    }
+
+    .abt {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+
+   .logo {
+    display: none;
+   }
+
+   #main-menu {
+    flex-direction: column;
+   }
+
+   #main-menu ul li {
+    margin-left: 5px;
+    margin-bottom: 15px;
+   }
+
+
+   #main-menu ul li a {
+    font-size: 8px;
+   }
+
+
+}
+
+  
+  /* Styles for Tablets */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    #container {
+        margin-left: 35px;
+    }
+
+
+  }
+  
+  /* Styles for Laptops and Desktops */
+  @media screen and (min-width: 769px) {
+    #container {
+        margin-left: 35px;
+    }
+  }
+  

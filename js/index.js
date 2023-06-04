@@ -17,7 +17,7 @@ renderCopyright();
 // Skills section
 document.addEventListener('DOMContentLoaded', () => {
     const renderSkillsList = () => {
-        const skills = ['HTML', 'CSS', 'JavaScript', 'GIT', 'REACT']
+        const skills = ['HTML', 'CSS', 'JavaScript', 'GIT/GITHUB', 'REACT']
         
         // DOM
         const skillsSection = document.getElementById('skills');

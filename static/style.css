@@ -1,5 +1,5 @@
-@import url(responsive.css);
 @import url(about.css);
+@import url(contact.css);
 
 * {
     margin: 0;
@@ -9,6 +9,8 @@
 
 body {
     background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* Navegation bar */
@@ -57,81 +59,16 @@ h2 {
     font-size: 55px;
     font-weight: bold;
 }
+
 #container {
     padding-bottom: 15%;
- }
-
-/* leave a message section */
-
-#msg {
-    padding-top: 10%;
-    padding-bottom:70px;
-}
-
-#leave_message {
-    padding: 5% 10% 10%;
-}
-
-form {
-    width: 25em;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 90%;
-    font-family: 'Blanka', sans-serif;
-    font-size: 15px;
-    color: white;
-    border-radius: 5px;
-    background-color: #222222;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-input[type=text],
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 5px 0;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=email],
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 5px 0;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-textarea[type=message] {
-    width: 100%;
-    padding: 20px 20px;
-    margin: 5px 0;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    padding: 16px 32px;
-    margin: 10px 2px;
-    border: none;
-    border-radius: 4px;
-    font-family: 'Blanka', sans-serif;
-    font-size: 15px;
-    background-color: rgb(24, 24, 24);
-    color: white;
-    cursor: pointer;
 }
 
 /* projects section */
 
 #projects {
     padding-left: 5%;
+    padding-bottom: 7em;
 }
 
 #prj {
@@ -161,12 +98,13 @@ button {
 
 #skll {
     padding-top: 10%;
-    padding-bottom: 7%;
+    padding-bottom: 5em;
 }
 
 #skills ul {
-   display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7em;
 }
 
 p {
@@ -179,7 +117,7 @@ p {
 
 .skl {
     width: 14%;
-    margin: 20px 3% ;
+    margin: 20px 3%;
     padding: 30px;
     border: 5px double;
     color: antiquewhite;
@@ -190,20 +128,28 @@ p {
 }
 
 /* footer */
+
+
+
 footer {
-    padding-top: 30px;
-    margin-top: 100px;
+    margin-top: 0;
+    padding-top: 0;
     background-color: #161515;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
+    padding-right: 2em;
+    padding-left: 2em;
     width: 100%;
-    padding: 10px 8%;
-    padding-left: 30px;
-    padding-right: 60px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 0;
+
 }
 
 nav ul {
@@ -216,11 +162,24 @@ nav ul {
     font-family: 'Blanka', sans-serif;
     color: #4f4b4b;
     padding-left: 30px;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.footer-nav, ul, li, a {
+    padding-bottom: 8px;
+}
+
+.table-expirience {
+   padding-bottom: 7em;
 }
 
 /* footer social media*/
+
+
 .fa {
     width: 50px;
+    padding-top: 1em;
     padding: 17px;
     margin: 5px 5px;
     font-size: 30px;
@@ -249,4 +208,81 @@ nav ul {
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/*Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+    .home-video {
+        width: 100%;
+    
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #skll {
+        font-size: 15px;
+        padding-top: 70px;
+    }
+
+    #skills {
+        padding-right: 7em;
+        padding-left: 7em;
+
+    }
+
+    #main-menu {
+        flex-direction: column;
+    }
+
+    #main-menu ul li {
+        margin-right: 2em;
+        margin-left: 1em;
+        margin-bottom: 15px;
+    }
+
+
+    #main-menu ul li a {
+        font-size: 15px;
+    }
+
+    #msg {
+        font-size: 30px;
+    }
+
+    body {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    
+    footer {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+   
+}
+
+/* Styles for Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .home-video {
+        width: 100%;
+
+    }
+
+    #skll {
+        font-size: 40px;
+        padding-top: 4em;
+    }
+
+}
+
+/* Styles for Laptops and Desktops */
+@media screen and (min-width: 769px) {
+    .home-video {
+        width: 100%;
+
+    }
 }

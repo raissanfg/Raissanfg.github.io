@@ -1,0 +1,86 @@
+/* leave a message section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-messages {
+    padding-bottom: 7em;
+}
+
+#msg {
+    padding-top: 10%;
+    padding-bottom:70px;
+}
+
+#leave_message {
+    padding: 5% 10% 10%;
+}
+
+form {
+    width: 25em;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+    font-family: 'Blanka', sans-serif;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea[type=message] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 16px 32px;
+    margin: 10px 2px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Blanka', sans-serif;
+    font-size: 15px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Styles for Mobile Devices */
+@media screen and (max-width: 480px) {
+    
+    #logo {
+        display: none;
+       }
+  }
+ 
