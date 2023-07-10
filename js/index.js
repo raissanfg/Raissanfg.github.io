@@ -17,13 +17,14 @@ renderCopyright();
 // Skills section
 document.addEventListener('DOMContentLoaded', () => {
     const renderSkillsList = () => {
-        const skills = ['HTML', 'CSS', 'JavaScript', 'GIT/GITHUB', 'REACT']
+        const skills = ['HTML', 'CSS', 'JAVASCRIPT', 'GIT/GITHUB', 'REACT']
         
         // DOM
         const skillsSection = document.getElementById('skills');
 
         if (skillsSection) {
             const skillsList = skillsSection.querySelector('ul');
+            skillsList.classList.add('small-font');
             
             for (let i = 0; i < skills.length; i++) {
                 const skill = document.createElement('li');
