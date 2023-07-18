@@ -176,12 +176,13 @@ nav ul {
 
 /*Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
+
     .home-video {
         width: 100%;
     
     }
 
-    .logo {
+    #logo {
         display: none;
     }
 
@@ -200,8 +201,13 @@ nav ul {
 
     }
 
+    nav #main-meni{
+        font-size: 5px;
+    }
+
     #main-menu {
         flex-direction: column;
+        
     }
 
     #main-menu ul li {
@@ -211,7 +217,7 @@ nav ul {
     }
 
     #main-menu ul li a {
-        font-size: 15px;
+        font-size: 9px;
     }
 
     #msg {
